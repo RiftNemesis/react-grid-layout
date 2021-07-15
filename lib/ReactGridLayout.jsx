@@ -159,8 +159,7 @@ export default class ReactGridLayout extends React.Component<Props, State> {
     // Allow parent to set layout directly.
     if (
       !isEqual(nextProps.layout, prevState.propsLayout) ||
-      nextProps.compactType !== prevState.compactType || 
-      nextProps.layout !== prevState.propsLayout
+      nextProps.compactType !== prevState.compactType
     ) {
       newLayoutBase = nextProps.layout;
     } else if (!childrenEqual(nextProps.children, prevState.children)) {
